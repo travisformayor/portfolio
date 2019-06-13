@@ -1,0 +1,115 @@
+* {
+  /* border: 1px solid red; */
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background: lightcoral;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .social {
+  height: 40px;
+  width: 40%;
+  background: lightgreen;
+}
+header nav {
+  height: 40px;
+  width: 40%;
+  background: lightsalmon;
+}
+main {
+  background: lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+/* About Section ================= */
+section.about {
+  width: 100%;
+  background: lightblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.about .img-holder {
+  background: silver;
+  width: 30%;
+  height: 40px;
+  margin: 10px;
+}
+.about .content-holder {
+  background: pink;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+/* Projects Section ============== */
+section.projects {
+  background: lightgreen;
+  width: 100%;
+  /* align-items: flex-start; */
+}
+.projects .project {
+  margin: 10px auto;
+  background: lightskyblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.project .img-holder {
+  background: silver;
+  height: 40px;
+  margin: 10px;
+  padding: 5px;
+}
+.project .content-holder {
+  background: pink;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+/* Meetup Section ================ */
+section.meetup {
+  background: lightyellow;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.meetup .img-holder {
+  background: silver;
+  width: 30%;
+  height: 40px;
+  margin: 10px;
+}
+.meetup .content-holder {
+  background: pink;
+  height: 40px;
+  margin: 10px;
+  padding: 10px;
+}
+/* Footer Section ================ */
+footer {
+  margin-top: auto;
+  background: lightsalmon;
+  width: 100%;
+  height: 40px;
+}
+
+/* todo: media query */
+/* widths, switching flex oxes, hamburger, etc */

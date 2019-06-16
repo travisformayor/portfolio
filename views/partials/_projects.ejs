@@ -1,0 +1,22 @@
+<section class="projects">
+  <!-- top project. Screenshots and links to app and code -->
+  <% projects.forEach(project => { %>
+    <div class="project">
+      <!-- template this in node ejs -->
+      <div class="project-img">
+        <img src="<%= project.screen %>" alt="<%= project.title %>">
+      </div>
+      <div>
+        <div class="project-title">
+          <h2><%= project.title %></h2>
+        </div>
+        <div class="project-content">
+          <h3><%= project.tagline %></h3>
+          <a href="<%= project.siteUrl %>">Site</a>
+          <a href="<%= project.github %>">Github</a>
+          <p><%= project.info %></p>
+        </div>
+      </div>
+    </div>
+  <% }); %>
+</section>

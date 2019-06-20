@@ -7,21 +7,20 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  
   <script defer src="js/jquery-3.4.1.min.js"></script>
   <script defer src="js/app.js"></script>
 
   <title><%= profile.name %> | <%= profile.title %></title>
 </head>
 <body>
-  <div class="content-wrapper">
-    <%- include('./partials/_navbar.ejs') %>
-    <main>
-      <%- include('./partials/_about.ejs') %>
-      <%- include('./partials/_projects') %>
-      <%#- include('./partials/_thons') %>
-      <%- include('./partials/_meetup') %>
-    </main>
-  </div class="content-wrapper">
+  <%- include('./partials/_navbar.ejs') %>
+  <main>
+    <%- include('./partials/_about.ejs') %>
+    <%- include('./partials/_projects') %>
+    <%#- include('./partials/_thons') %>
+    <%- include('./partials/_meetup') %>
+  </main>
   <%- include('./partials/_footer.ejs') %>
   </body>
 </html>

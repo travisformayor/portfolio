@@ -1,34 +1,31 @@
-console.log('active');
+// console.log('connected');
 
-$('.navbutton').on("click", (e) => {
-  // console.log($('nav').find('a'));
-  // e.preventDefault();
-  $('nav').find('a').removeClass('active');
-  // $('html,body').scrollTo(this.hash,this.hash); 
-  $(e.target).addClass('active');
-})
+// Set single nav item active
+const setActive = (target) => {
+  if (!target.hasClass('active')) {
+    console.log('something')
+    $('nav').find('a').removeClass('active');
+    $(target).addClass('active');
+  }
+}
 
-// // Active on scroll
-// // https://css-tricks.com/sticky-smooth-active-nav/
-// let mainNavLinks = document.querySelectorAll("nav ul li a");
-// let mainSections = document.querySelectorAll("main section");
+// Set active by click
+// This is now redundant, with scroll triggering it
+// $('.navbutton').on("click", (e) => {
+//   setActive(e.target);
+// })
 
-// let lastId;
-// let cur = [];
-
-// window.addEventListener("scroll", event => {
-//   let fromTop = window.scrollY;
-
-//   mainNavLinks.forEach(link => {
-//     let section = document.querySelector(link.hash);
-
-//     if (
-//       section.offsetTop <= fromTop &&
-//       section.offsetTop + section.offsetHeight > fromTop
-//     ) {
-//       link.classList.add("current");
-//     } else {
-//       link.classList.remove("current");
-//     }
-//   });
-// });
+// Set active by scroll
+// from https://jsfiddle.net/cse_tushar/Dxtyu/141/
+// fixed position off by 1 and flickering for already active navs
+$(document).on("scroll", (e) => {
+  const scrollPos = $(document).scrollTop();
+  $('nav a').each(function () {
+    const currLink = $(this);
+    const refElement = $(currLink.attr("href"));
+    const refTopPos = refElement.position().top - 1;
+    if (refTopPos <= scrollPos && refTopPos + refElement.height() > scrollPos) {
+      setActive(currLink);
+    } 
+  });
+});

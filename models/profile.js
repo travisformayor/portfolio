@@ -1,9 +1,9 @@
 const Profile = {
   img: 'img/me.jpg',
-  name: 'Travis Dean Uhrig',
+  name: 'Travis Uhrig',
   title: 'Software Engineer',
   tagline: '',
-  about: 'Hi! I am a software developer with a sysAdmin background, excited about collaborative tools for working together to bring ideas to life. I\'ve also spent time volunteering for open source, linux, and bitcoin/cryptocurrency groups. I have moderated bitcoin themed panels, spoken at conferences on the potential for art in crypto, and organize one of the oldest and largest bitcoin meetup groups in the world.',
+  about: 'Hi! I am a software developer with a sysAdmin background. I like collaborative tools like Trello and bringing ideas to life. I volunteer time for open source, linux, and bitcoin/cryptocurrency groups. I have moderated bitcoin themed panels, spoken at conferences on the potential for art in crypto, and I organize one of the oldest and largest bitcoin meetup groups in the world.',
   social: [
     {
       site: 'Twitter',

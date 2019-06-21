@@ -25,7 +25,7 @@ $(document).on("scroll", (e) => {
 
 const scrollActive = () => {
   const scrollPos = $(document).scrollTop();
-  $('nav ul.fullnav a').each(function () {
+  $('nav ul#fullnav a').each(function () {
     const currLink = $(this);
     const refElement = $(currLink.attr("href"));
     const refTopPos = refElement.position().top - 1;
@@ -35,7 +35,7 @@ const scrollActive = () => {
   });
 };
 
-// Shrink Nav bar on scroll
+// Shrink nav bar and elements on scroll
 const toggleNavSize = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     // shrink social icons    
@@ -72,10 +72,4 @@ const toggleNavSize = () => {
   }
 }
 
-
-// .hamburger .line {
-//   width: 70%;
-//   border: 2px solid black;
-//   margin: 7px;
-// }
-
+// ToDo - hamburger side out menu

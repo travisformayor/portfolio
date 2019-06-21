@@ -1,3 +1,4 @@
+/* Top Level ===================== */
 * {
   /* border: 1px solid red; */
   box-sizing: border-box;
@@ -50,6 +51,7 @@ header {
   left: 0;
   right: 0;
 }
+/* Social Icons ================== */
 header .social {
   /* background: lightgreen; */
   width: 25%;
@@ -64,6 +66,7 @@ header .social img {
   transition-property: height, margin;
   transition-duration: 300ms;
 }
+/* Nav Buttons =================== */
 nav {
   width: 50%;
 }
@@ -99,6 +102,10 @@ nav .active {
   font-size: 1.75rem;
   line-height: 1.2rem;
   border-bottom: 7px solid lightsalmon;
+}
+/* Hamburger Menu ================ */
+#mobilenav {
+  display: none;
 }
 .hamburger {
   position: absolute;
@@ -209,8 +216,27 @@ footer {
   margin-top: -50px;
 }
 
-/* todo: nav bar shrink on scroll */
-/* todo: media queries */
-/* - hamburger */
-/* - about stacks */
-/* - projects stack */
+/* Media Queries ================= */
+@media screen and (max-width: 720px) {
+  /* toggle hamburger at nav breakpoint */
+  #fullnav { display: none; }
+  #mobilenav { display: block; }
+  /* Give social links more room */
+  nav { width: 0%; }
+  header .social { width: 50%; }
+  /* switch projects to columns */
+  section#projects .project { flex-direction: column; }
+  .project-img { margin: 10px auto; }
+  /* switch about into to column */
+  section#about .about { flex-direction: column; }
+  .about-img { margin: 10px auto 0px; }
+  .about-title { text-align: center; }
+  .about-content { text-align: center; }
+}
+@media screen and (max-width: 400px) {
+  /* fix project images and social icons overflowing */
+  .project-img img { width: 75vw; }
+  /* Give social links more room */
+  nav { width: 20%; }
+  header .social { width: 50%; }
+}

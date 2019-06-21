@@ -25,7 +25,7 @@ $(document).on("scroll", (e) => {
 
 const scrollActive = () => {
   const scrollPos = $(document).scrollTop();
-  $('nav a').each(function () {
+  $('nav ul.fullnav a').each(function () {
     const currLink = $(this);
     const refElement = $(currLink.attr("href"));
     const refTopPos = refElement.position().top - 1;
@@ -35,19 +35,47 @@ const scrollActive = () => {
   });
 };
 
+// Shrink Nav bar on scroll
 const toggleNavSize = () => {
-  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-    // header .social img {
-    //   height: 50px;
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    // shrink social icons    
     $('.social img').css({
      'height': '30px',
      'margin': '5px'
-    })
+    });
+    // shrink hamburger menu
+    $('.hamburger').css({
+      'width': '40px',
+      'top': '5px',
+    });
+    $('.hamburger .line').css({
+      'width': '70%',
+      'border': '1.5px solid black',
+      'margin': '6px',
+    });
   } else {
+    // restore social icons size
     $('.social img').css({
       'height': '50px',
       'margin': '10px'
-    })
+    });
+    // restore hamburger menu size
+    $('.hamburger').css({
+      'width': '50px',
+      'top': '15px',
+    });
+    $('.hamburger .line').css({
+      'width': '66%',
+      'border': '2.5px solid black',
+      'margin': '8px',
+    });
   }
 }
+
+
+// .hamburger .line {
+//   width: 70%;
+//   border: 2px solid black;
+//   margin: 7px;
+// }
 

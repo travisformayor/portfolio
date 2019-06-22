@@ -1,0 +1,40 @@
+{
+  "projects": [
+    {
+      "id": 3,
+      "title": "Curio Cards",
+      "tagline": "",
+      "screen": "",
+      "siteUrl": "",
+      "github": "",
+      "info": ""
+    },
+    {
+      "id": 4,
+      "title": "VT-100",
+      "tagline": "",
+      "screen": "",
+      "siteUrl": "",
+      "github": "",
+      "info": "I build this site to see if I could 'draw' a classic VT-100 computer terminal with only vanilla CSS in just a few days time. It was also a wonderful opportunity to use the WC3 'Beige' color code, an oft overlooked color option in web development. Check out the Readme file on the github for more information."
+    },
+    {
+      "id": 5,
+      "title": "Flashr",
+      "tagline": "",
+      "screen": "",
+      "siteUrl": "",
+      "github": "",
+      "info": ""
+    },
+    {
+      "id": 6,
+      "title": "Wayfarer",
+      "tagline": "",
+      "screen": "",
+      "siteUrl": "",
+      "github": "",
+      "info": ""
+    }
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "globals": {
+    "profile": {
+      "img": "img/me.jpg",
+      "name": "Travis Uhrig",
+      "title": "Software Engineer",
+      "tagline": "",
+      "about": "Hi! I am a software developer with a sysAdmin background. I like collaborative tools like Trello and bringing ideas to life. I volunteer time for open source, linux, and bitcoin/cryptocurrency groups. I have moderated bitcoin themed panels, spoken at conferences on the potential for art in crypto, and organize one of the oldest and largest bitcoin meetup groups in the world.",
+      "social": [
+        {
+          "site": "Twitter",
+          "url": "https://twitter.com/travisformayor",
+          "logo": "img/twitter-logo.svg"
+        },
+        {
+          "site": "GitHub",
+          "url": "https://github.com/travisformayor",
+          "logo": "img/github-logo.svg"
+        },
+        {
+          "site": "LinkedIn",
+          "url": "https://linkedin.com/in/travisuhrig",
+          "logo": "img/linkedin-logo.svg"
+        }
+      ]
+    },
+    "projects": [
+      {
+        "id": 1,
+        "title": "Marker",
+        "tagline": "Image Gallery powered by AWS S3",
+        "screen": "img/marker.png",
+        "siteUrl": "https://marker-123.herokuapp.com",
+        "github": "https://github.com/travisformayor/marker-ga",
+        "info": "Marker is a React/Express/MongoDB app that I build as my final project while at General Assembly. I wanted to work more with React and React component animations, as well as tackle a problem that was both more involved on the backend while staying fun on the front end. Users can create an account, create draft submissions they can update over time or delete, upload images, and submit a final version to the gallery. The upload button packs a lot of features, with progress tracking, backend validation on file size and file type, creating a thumbnail, using hashing for file name and data upload verification, and uploading the image and thumbnail to AWS S3. Users are able to log off and return to any drafts-in-progress at a later time."
+      },
+      {
+        "id": 2,
+        "title": "PlayDate",
+        "tagline": "Tinder for Pets",
+        "screen": "img/playdate.png",
+        "siteUrl": "https://playdate.waffle.expert",
+        "github": "https://github.com/allen-wright/sei1-project1",
+        "info": "PlayDate is a \"Tinder for Pets\" app that follows the time honored \"x company for y market\" format. The app lets pet owners swipe left or right on other pets, licking or skipping them. If two pets both lick each other, then a mutual match is triggered and a chat is created between them. The chat is live, and allows coordination on play date times and location. This was my first group project at General Assembly (3 person team) and I was really amazed at how complete of a project we could create in only a few days. Our team had a really extensive and detailed planning stage that focused heavily on MVP first. I focused mostly on the profile and matching system, as well as generating random matches and chats in our seed data. My team decided early on to constantly shift roles to make sure no one got stuck working on one part or one problem, which let us each be heavily involved with all parts of the app."
+      }
+    ]
+  }
+}

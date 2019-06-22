@@ -62,15 +62,17 @@ header .social {
 header .social img {
   height: 50px;
   width: auto;
-  margin: 10px;
   transition-property: height, margin;
   transition-duration: 300ms;
 }
+header .social a {
+  margin: 12px 10px 8px;
+}
 /* Nav Buttons =================== */
-nav {
+nav#fullnav {
   width: 50%;
 }
-nav ul {
+nav#fullnav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -103,28 +105,81 @@ nav .active {
   line-height: 1.2rem;
   border-bottom: 7px solid lightsalmon;
 }
-/* Hamburger Menu ================ */
+/* Hamburger Menu Icon =========== */
 #mobilenav {
   display: none;
 }
-.hamburger {
+button#hamburger {
   position: absolute;
-  top: 15px;
+  top: 12px;
   right: 20px;
-  width: 50px;
+  width: 60px;
   border-radius: 5px;
   border: 1px solid white;
   background: white;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
   transition-property: width, top;
   transition-duration: 300ms;
 }
-.hamburger .line {
-  width: 66%;
+button#hamburger .line {
+  width: 70%;
   border: 2.5px solid black;
-  margin: 8px;
+  margin: 8px 7px;
   transition-property: width, margin, border;
   transition-duration: 300ms;
+}
+/* Hamburger Menu Slide Out ====== */
+button#close {
+  margin: 20px;
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  background: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+button#close .cross1 {
+  border: 2.5px solid black;
+  transform: rotate(45deg);
+}
+button#close .cross2 {
+  margin-top: -5px;
+  border: 2.5px solid black;
+  transform: rotate(135deg);
+}
+.sidemenu {
+  background: white;
+  z-index: 1;
+  position: fixed;
+  top: 0px;
+  right: -300px;
+  bottom: 0px;
+  width: 80vw;
+  max-width: 300px;
+  transition-property: right;
+  transition-duration: 300ms;
+}
+nav#sidenav ul {
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+nav#sidenav li {
+  margin: 5px 0;
+}
+nav#sidenav a {
+  padding: 10px 0;
+  background-color: whitesmoke;
+  font-size: 2rem;
+  /* line-height: 1.25rem; */
+  height: 100%;
 }
 /* About Section ================= */
 section#about .about {
@@ -222,7 +277,7 @@ footer {
   #fullnav { display: none; }
   #mobilenav { display: block; }
   /* Give social links more room */
-  nav { width: 0%; }
+  nav#mobilenav { width: 0%; }
   header .social { width: 50%; }
   /* switch projects to columns */
   section#projects .project { flex-direction: column; }
@@ -237,6 +292,6 @@ footer {
   /* fix project images and social icons overflowing */
   .project-img img { width: 75vw; }
   /* Give social links more room */
-  nav { width: 20%; }
+  nav#mobilenav { width: 20%; }
   header .social { width: 50%; }
 }

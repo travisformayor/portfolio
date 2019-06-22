@@ -1,75 +1,90 @@
 // console.log('connected');
 
-// Set single nav item active
+// // Open and Close mobile hamburger menu
+// Open hamburger menu
+$('#hamburger').on("click", () => {
+  $('.sidemenu').css('right', '0px');
+});
+// Close hamburger menu with close
+$('#close').on("click", () => {
+  $('.sidemenu').css('right', '-300px');
+});
+// Close hamburger menu by making selection
+$('nav#sidenav a').on("click", () => {
+  $('.sidemenu').css('right', '-300px');
+});
+// Close hamburger menu by anywhere outside
+$('body').on("click", (e) => {
+  const burgerButton = e.target.closest('button#hamburger')
+  const sidemenu = e.target.closest('div.sidemenu')
+  if(!burgerButton && !sidemenu) {
+    $('.sidemenu').css('right', '-300px');
+  };
+});
+
+// // Set single nav item active
 const setActive = (target) => {
   if (!target.hasClass('active')) {
     // console.log('set')
     $('nav').find('a').removeClass('active');
     $(target).addClass('active');
-  }
-}
+  };
+};
 
-// Set active by click
+// // Set active by click
 // This is now redundant, with scroll triggering it
 // $('.navbutton').on("click", (e) => {
 //   setActive(e.target);
 // })
 
-// Set active by scroll
+// // Set active by scroll
 // from https://jsfiddle.net/cse_tushar/Dxtyu/141/
 // fixed position off by 1 and flickering for already active navs
 $(document).on("scroll", (e) => {
   scrollActive();
   toggleNavSize();
 });
-
 const scrollActive = () => {
   const scrollPos = $(document).scrollTop();
-  $('nav ul#fullnav a').each(function () {
+  $('nav#fullnav ul a').each(function () {
     const currLink = $(this);
     const refElement = $(currLink.attr("href"));
     const refTopPos = refElement.position().top - 1;
     if (refTopPos <= scrollPos && refTopPos + refElement.height() > scrollPos) {
       setActive(currLink);
-    } 
+    };
   });
 };
 
-// Shrink nav bar and elements on scroll
+// // Shrink nav bar and elements on scroll
 const toggleNavSize = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     // shrink social icons    
-    $('.social img').css({
-     'height': '30px',
-     'margin': '5px'
-    });
+    $('.social img').css('height', '30px');
+    $('.social a').css('margin', '7px 5px 3px');
     // shrink hamburger menu
-    $('.hamburger').css({
-      'width': '40px',
-      'top': '5px',
+    $('#hamburger').css({
+      'width': '45px',
+      'top': '4px',
     });
-    $('.hamburger .line').css({
+    $('#hamburger .line').css({
       'width': '70%',
       'border': '1.5px solid black',
-      'margin': '6px',
+      'margin': '6px 5px',
     });
   } else {
     // restore social icons size
-    $('.social img').css({
-      'height': '50px',
-      'margin': '10px'
-    });
+    $('.social img').css('height', '50px');
+    $('.social a').css('margin', '13px 10px 7px');
     // restore hamburger menu size
-    $('.hamburger').css({
-      'width': '50px',
-      'top': '15px',
+    $('#hamburger').css({
+      'width': '60px',
+      'top': '12px',
     });
-    $('.hamburger .line').css({
-      'width': '66%',
+    $('#hamburger .line').css({
+      'width': '70%',
       'border': '2.5px solid black',
-      'margin': '8px',
+      'margin': '8px 7px',
     });
-  }
-}
-
-// ToDo - hamburger side out menu
+  };
+};

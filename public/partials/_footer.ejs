@@ -1,3 +1,10 @@
 <footer>
-
+  <div class="social">
+    <!-- social icon links -->
+    <% profile.social.forEach(social => { %>
+      <a href="<%= social.url %>">
+        <img src="<%= social.logo %>" alt="<%= social.site %>">
+      </a>
+    <% }); %>
+  </div>
 </footer>

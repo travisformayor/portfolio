@@ -12,8 +12,15 @@
         </div>
         <div class="project-content">
           <h3><%= project.tagline %></h3>
-          <a href="<%= project.siteUrl %>">Site</a>
-          <a href="<%= project.github %>">Github</a>
+          <!-- a href="<%= project.siteUrl %>">Site</a-->
+          <!--a href="<%= project.github %>">Github</a-->
+          <a 
+            class="github-button" 
+            href="<%= project.github %>" 
+            data-size="large" 
+            aria-label="View Project on GitHub">
+            <%= project.title %>
+          </a>
           <p><%= project.info %></p>
         </div>
       </div>

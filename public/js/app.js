@@ -60,8 +60,8 @@ const scrollActive = () => {
 const toggleNavSize = () => {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     // shrink social icons    
-    $('.social img').css('height', '30px');
-    $('.social a').css('margin', '7px 5px 3px');
+    $('header .social img').css('height', '30px');
+    $('header .social a').css('margin', '7px 5px 3px');
     // shrink hamburger menu
     $('#hamburger').css({
       'width': '45px',
@@ -74,8 +74,8 @@ const toggleNavSize = () => {
     });
   } else {
     // restore social icons size
-    $('.social img').css('height', '50px');
-    $('.social a').css('margin', '13px 10px 7px');
+    $('header .social img').css('height', '50px');
+    $('header .social a').css('margin', '13px 10px 7px');
     // restore hamburger menu size
     $('#hamburger').css({
       'width': '60px',

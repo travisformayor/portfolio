@@ -14,13 +14,26 @@
           <h3><%= project.tagline %></h3>
           <!-- a href="<%= project.siteUrl %>">Site</a-->
           <!--a href="<%= project.github %>">Github</a-->
-          <a 
-            class="github-button" 
-            href="<%= project.github %>" 
-            data-size="large" 
-            aria-label="View Project on GitHub">
-            <%= project.title %>
-          </a>
+          <div style="display: inline-block">
+            <% if (project.siteUrl && project.id === 3) { %>
+              <a href="<%= project.siteUrl %>" target="_blank">
+                <button class="site-link">
+                  Visit <%= project.title %>
+                </button>
+              </a>
+            <% } %>
+          </div>
+          <div style="display: inline-block">
+            <% if (project.github) { %>
+              <a 
+                class="github-button" 
+                href="<%= project.github %>" 
+                data-size="large" 
+                aria-label="View Project on GitHub">
+                <%= project.title %>
+              </a>
+            <% } %>
+          </div>
           <p><%= project.info %></p>
         </div>
       </div>

@@ -42,6 +42,15 @@
         "siteUrl": "https://playdate.waffle.expert",
         "github": "https://github.com/allen-wright/sei1-project1",
         "info": "PlayDate is a \"Tinder for Pets\" app that follows the time honored \"x company for y market\" format. The app lets pet owners swipe left or right on other pets, licking or skipping them. If two pets both lick each other, then a mutual match is triggered and a chat is created between them. The chat is live, and allows coordination on play date times and location. This was my first group project at General Assembly (3 person team) and I was really amazed at how complete of a project we could create in only a few days. Our team had a really extensive and detailed planning stage that focused heavily on MVP first. I focused mostly on the profile and matching system, as well as generating random matches and chats in our seed data. My team decided early on to constantly shift roles to make sure no one got stuck working on one part or one problem, which let us each be heavily involved with all parts of the app."
+      },
+      {
+        "id": 3,
+        "title": "Curio Cards",
+        "tagline": "Rare Collectable Art on Ethereum",
+        "screen": "img/curio.png",
+        "siteUrl": "https://curio.cards",
+        "github": "",
+        "info": "Curio Cards is an Ethereum art project originally created as an extension of the San Francisco Bitcoin Meetup's annual art show. It is referenced as a forerunner project in the ERC-721 EIP, which lays out the specifications for the standardized non-fungible-tokens contract. Released May 09th of 2017, it is likely the very first non-fungible art token sold on mainnet Ethereum. Curio contains many features that later became standard for NFTs: Automatic vending machine purchases, non-divisible, and using IPFS hosting and IPFS hashes for the artwork. Created 30 series of digital prints by 7 artists over 4 months. Among other things I was responsible for building the website, first as a static site and eventually as a Ruby on Rails app."
       }
     ]
   }

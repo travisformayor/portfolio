@@ -30,7 +30,7 @@
 }
 h1, h2, h3 {
   margin-top: 0px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 a {
   text-decoration: none;
@@ -357,6 +357,23 @@ section#projects .project:hover {
 }
 .project-title h2 {
   color: var(--title-font-color);
+}
+.project button.site-link {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  background-color: #eff3f6;
+  border: 1px solid #c5c9cc;
+  border-radius: 0.25em;
+  color: #24292e;
+  text-decoration: none;
+  /* position: relative;
+  top: -10px; */
+}
+.project button.site-link:hover {
+  background-color: #e6ebf1;
+  border-color: rgba(27,31,35,0.35);
 }
 .project-content {
   margin: 0 10px 10px;

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!--
+  Oh hi!
+
+  Curious about the code used to build this site? Good news it's open source!
+  You can find everything here:
+  https://github.com/travisformayor/portfolio
+
+  Feel free to fork or send me a PR request \o/
+
+  - Travis
+-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+  <script defer src="https://buttons.github.io/buttons.js"></script>
+  <script defer src="js/jquery-3.4.1.min.js"></script>
+  <script defer src="js/app.js"></script>
+
+  <title>Travis Uhrig | Software Engineer</title>
+</head>
+<body>
+  <header>
+  <div class="social">
+    <!-- social icon links -->
+    
+      <a href="https://twitter.com/travisformayor">
+        <img src="img/twitter-logo.svg" alt="Twitter">
+      </a>
+    
+      <a href="https://github.com/travisformayor">
+        <img src="img/github-logo.svg" alt="GitHub">
+      </a>
+    
+      <a href="https://linkedin.com/in/travisuhrig">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    
+  </div>
+  <nav id="fullnav">
+    <!-- nav links -->
+    <ul>
+      <li><a class="navbutton active" href="#about">About</a></li>
+      <li><a class="navbutton" href="#projects">Projects</a></li>
+      
+      
+    </ul>
+  </nav>
+  <nav id="mobilenav">
+    <button id="hamburger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+  </nav>
+</header>
+  <div class="sidemenu">
+  <button id="close">
+    <div class="cross1"></div>
+    <div class="cross2"></div>
+  </button>
+  <nav id="sidenav">
+    <!-- nav links -->
+    <ul>
+      <li><a class="navbutton" href="#about">About</a></li>
+      <li><a class="navbutton" href="#projects">Projects</a></li>
+      
+      
+    </ul>
+  </nav>
+</div>
+  <main>
+    <section id="about">
+  <div class="about">
+    <!-- about text and photo -->
+    <div class="about-img">
+      <div class="about-img-holder">
+        <img src="img/me.jpg" alt="Travis Uhrig">
+      </div>
+    </div>
+    <div>
+      <div class="about-title">
+        <h2>Travis Uhrig</h2>
+      </div>
+      <div class="about-content">
+        <h4>Software Engineer</h4>
+        <p>Hi! I am a software developer with a sysAdmin background. I like collaborative tools like Trello and bringing ideas to life. I volunteer time for open source, linux, and bitcoin/cryptocurrency groups. I have moderated bitcoin themed panels, spoken at conferences on the potential for art in crypto, and organize one of the oldest and largest bitcoin meetup groups in the world.</p>
+        <!-- Place this tag where you want the button to render. -->
+        <a 
+          class="github-button" 
+          href="https://github.com/travisformayor" 
+          data-size="large" 
+          aria-label="Check out @travisformayor on GitHub">
+          @travisformayor
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="projects">
+  <!-- top project. Screenshots and links to app and code -->
+  
+    <div class="project">
+      <!-- template this in node ejs -->
+      <div class="project-img">
+        <img src="img/marker.png" alt="Marker">
+      </div>
+      <div class="project-info">
+        <div class="project-title">
+          <h2>Marker</h2>
+        </div>
+        <div class="project-content">
+          <h3>Image Gallery powered by AWS S3</h3>
+          <!-- a href="https://marker-123.herokuapp.com">Site</a-->
+          <!--a href="https://github.com/travisformayor/marker-ga">Github</a-->
+          <div style="display: inline-block">
+            
+          </div>
+          <div style="display: inline-block">
+            
+              <a 
+                class="github-button" 
+                href="https://github.com/travisformayor/marker-ga" 
+                data-size="large" 
+                aria-label="View Project on GitHub">
+                Marker
+              </a>
+            
+          </div>
+          <p>Marker is a React/Express/MongoDB app that I build as my final project while at General Assembly. I wanted to work more with React and React component animations, as well as tackle a problem that was both more involved on the backend while staying fun on the front end. Users can create an account, create draft submissions they can update over time or delete, upload images, and submit a final version to the gallery. The upload button packs a lot of features, with progress tracking, backend validation on file size and file type, creating a thumbnail, using hashing for file name and data upload verification, and uploading the image and thumbnail to AWS S3. Users are able to log off and return to any drafts-in-progress at a later time.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="project">
+      <!-- template this in node ejs -->
+      <div class="project-img">
+        <img src="img/playdate.png" alt="PlayDate">
+      </div>
+      <div class="project-info">
+        <div class="project-title">
+          <h2>PlayDate</h2>
+        </div>
+        <div class="project-content">
+          <h3>Tinder for Pets</h3>
+          <!-- a href="https://playdate.waffle.expert">Site</a-->
+          <!--a href="https://github.com/allen-wright/sei1-project1">Github</a-->
+          <div style="display: inline-block">
+            
+          </div>
+          <div style="display: inline-block">
+            
+              <a 
+                class="github-button" 
+                href="https://github.com/allen-wright/sei1-project1" 
+                data-size="large" 
+                aria-label="View Project on GitHub">
+                PlayDate
+              </a>
+            
+          </div>
+          <p>PlayDate is a &#34;Tinder for Pets&#34; app that follows the time honored &#34;x company for y market&#34; format. The app lets pet owners swipe left or right on other pets, licking or skipping them. If two pets both lick each other, then a mutual match is triggered and a chat is created between them. The chat is live, and allows coordination on play date times and location. This was my first group project at General Assembly (3 person team) and I was really amazed at how complete of a project we could create in only a few days. Our team had a really extensive and detailed planning stage that focused heavily on MVP first. I focused mostly on the profile and matching system, as well as generating random matches and chats in our seed data. My team decided early on to constantly shift roles to make sure no one got stuck working on one part or one problem, which let us each be heavily involved with all parts of the app.</p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="project">
+      <!-- template this in node ejs -->
+      <div class="project-img">
+        <img src="img/curio.png" alt="Curio Cards">
+      </div>
+      <div class="project-info">
+        <div class="project-title">
+          <h2>Curio Cards</h2>
+        </div>
+        <div class="project-content">
+          <h3>Rare Collectable Art on Ethereum</h3>
+          <!-- a href="https://curio.cards">Site</a-->
+          <!--a href="">Github</a-->
+          <div style="display: inline-block">
+            
+              <a href="https://curio.cards" target="_blank">
+                <button class="site-link">
+                  Visit Curio Cards
+                </button>
+              </a>
+            
+          </div>
+          <div style="display: inline-block">
+            
+          </div>
+          <p>Curio Cards is an Ethereum art project originally created as an extension of the San Francisco Bitcoin Meetup&#39;s annual art show. It is referenced as a forerunner project in the ERC-721 EIP, which lays out the specifications for the standardized non-fungible-tokens contract. Released May 09th of 2017, it is likely the very first non-fungible art token sold on mainnet Ethereum. Curio contains many features that later became standard for NFTs: Automatic vending machine purchases, non-divisible, and using IPFS hosting and IPFS hashes for the artwork. Created 30 series of digital prints by 7 artists over 4 months. Among other things I was responsible for building the website, first as a static site and eventually as a Ruby on Rails app.</p>
+        </div>
+      </div>
+    </div>
+  
+</section>
+    
+    
+  </main>
+  <footer>
+  <div class="social">
+    <!-- social icon links -->
+    
+      <a href="https://twitter.com/travisformayor">
+        <img src="img/twitter-logo.svg" alt="Twitter">
+      </a>
+    
+      <a href="https://github.com/travisformayor">
+        <img src="img/github-logo.svg" alt="GitHub">
+      </a>
+    
+      <a href="https://linkedin.com/in/travisuhrig">
+        <img src="img/linkedin-logo.svg" alt="LinkedIn">
+      </a>
+    
+  </div>
+</footer>
+
+  </body>
+</html>

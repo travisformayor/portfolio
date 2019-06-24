@@ -1,3 +1,3 @@
 # Portfolio
 
-Portfolio site using only Harp, EJS, and jQuery
+Portfolio site using just Harp, EJS, and jQuery

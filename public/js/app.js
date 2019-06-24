@@ -1,4 +1,9 @@
-// console.log('connected');
+console.log('####################');
+console.log('Oh hi! Curious about the code used to build this site? Good news it\'s open source! You can find everything here:');
+console.log('https://github.com/travisformayor/portfolio');
+console.log('Feel free to fork or send me a PR request \\o/');
+console.log(' - Travis');
+console.log('####################');
 
 // // Open and Close mobile hamburger menu
 // Open hamburger menu

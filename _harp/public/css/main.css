@@ -72,6 +72,10 @@ section {
   padding-top: 75px;
   width: 100%;
 }
+h1.section-title {
+  margin: 0px auto 10px;
+  text-align: center;
+}
 /* Nav Header ==================== */
 header {
   background: var(--bg-color);
@@ -313,19 +317,24 @@ section#about .about {
   padding: 0 10px 10px;
 }
 /* Projects Section ============== */
+section#projects .projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
 section#projects .project {
   border-radius: 10px;
-  margin: 0px auto 30px;
+  margin: 10px;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   background-color: var(--primary);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -336,6 +345,11 @@ section#projects .project {
   transition: top ease 0.5s, box-shadow ease 0.5s;
   transition: top ease 0.5s, box-shadow ease 0.5s, -webkit-box-shadow ease 0.5s;
 }
+.project-dummy {
+  margin: 10px;
+  width: 370px;
+  height: 0px;
+}
 section#projects .project:hover {
   top: -15px;
   -webkit-box-shadow: var(--box-shadow-out);
@@ -343,18 +357,20 @@ section#projects .project:hover {
 }
 .project-img {
   margin: 10px;
-  padding: 5px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-height: 355px;
 }
 .project-img img {
-  border-radius: 10px;
   width: 350px;
   height: auto;
 }
 .project-title {
+  text-align: center;
   border-radius: 10px;
   background: var(--title-color);
   -webkit-box-shadow: var(--box-shadow);
-          box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
   height: 45px;
   margin: 15px;
   padding: 10px;
@@ -380,6 +396,7 @@ section#projects .project:hover {
   border-color: rgba(27,31,35,0.35);
 }
 .project-content {
+  text-align: center;
   margin: 0 10px 10px;
   padding: 0 10px 10px;
 }
@@ -454,10 +471,6 @@ footer .social img {
             align-items: center;
   }
   .about-title { text-align: center; }
-  /* switch projects to columns */
-  section#projects .project { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; }
-  .project-img { margin: 15px auto 0px; }
-  .project-title { text-align: center; }
 }
 @media screen and (max-width: 400px) {
   /* fill site to full width */

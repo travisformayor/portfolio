@@ -5,7 +5,7 @@
   <div class="projects">
     <% projects.forEach(project => { %>
       <div class="project">
-        <!-- template this in node ejs -->
+        <a class="div-link" href="<%= project.github %>" target="_blank"></a>
         <div class="project-img">
           <img src="<%= project.screen %>" alt="<%= project.title %>">
         </div>

@@ -45,8 +45,8 @@ html {
 body {
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--bg-color)), color-stop(30%), to(white));
-  background: linear-gradient(var(--bg-color), 30%, white);
+  /* background: -webkit-gradient(linear, left top, left bottom, from(var(--bg-color)), color-stop(30%), to(white)); */
+  /* background: linear-gradient(var(--bg-color), 30%, white); */
 }
 main {
   display: -webkit-box;
@@ -72,8 +72,18 @@ section {
   padding-top: 75px;
   width: 100%;
 }
-h1.section-title {
-  margin: 0px auto 10px;
+.section-title {
+  margin: 0px auto 40px;
+  width: 95%;
+  padding: 10px;
+  border-radius: 10px;
+  /* display: inline-block; */
+  background-color: var(--title-color);
+  box-shadow: var(--box-shadow);
+}
+.section-title h1 {
+  margin: 0px;
+  color: var(--title-font-color);
   text-align: center;
 }
 /* Nav Header ==================== */
@@ -224,7 +234,7 @@ button#close .cross2 {
 }
 .sidemenu {
   background: white;
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   top: 0px;
   right: -300px;
@@ -283,8 +293,6 @@ section#about .about {
           align-items: flex-start;
 }
 .about-img {
-  /* Pull the whole thing under the navbar */
-  z-index: -1;
   padding: 10px;
 }
 .about-img-holder {
@@ -320,7 +328,7 @@ section#about .about {
 section#projects .projects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-around;
 }
 section#projects .project {
   border-radius: 10px;
@@ -476,7 +484,7 @@ footer .social img {
   /* fill site to full width */
   main { width: 100%; }
   /* fix project images and social icons overflowing */
-  .project-img img { width: 90vw; }
+  .project-img img { width: 95vw; }
   /* give social links more room */
   nav#mobilenav { width: 20%; }
   header .social { width: 50%; }

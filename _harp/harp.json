@@ -33,6 +33,13 @@
         "github": "https://github.com/travisformayor/marker-ga"
       },
       {
+        "id": 1,
+        "title": "Sunny Where?",
+        "tagline": "Find the closest major city to you that is Sunny",
+        "screen": "img/sunnywhere.png",
+        "github": "https://github.com/travisformayor/sunnywhere"
+      },
+      {
         "id": 2,
         "title": "PlayDate",
         "tagline": "Tinder for Pets",
@@ -45,6 +52,15 @@
         "tagline": "Rare Collectable Art on Ethereum",
         "screen": "img/curio.png",
         "github": "https://github.com/curiocards/curio.cards"
+      }
+    ],
+    "meetups": [
+      {
+        "name": "San Francisco Bitcoin Meetup",
+        "role": "Organizer",
+        "img": "img/sfbtcmeet.jpeg",
+        "url": "",
+        "info": ""
       }
     ]
   }

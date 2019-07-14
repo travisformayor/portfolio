@@ -35,7 +35,7 @@
       {
         "id": 1,
         "title": "Sunny Where?",
-        "tagline": "Find the closest major city to you that is Sunny",
+        "tagline": "Find the Closest Sunny City",
         "screen": "img/sunnywhere.png",
         "github": "https://github.com/travisformayor/sunnywhere"
       },

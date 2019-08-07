@@ -63,22 +63,22 @@
         "info": ""
       }
     ],
-    "make": [
+    "makes": [
       {
         "id": 1, 
         "title": "IDEO CoLab 2019 Makeathon",
-        "project": "",
-        "photo": "",
+        "project": "My First Crypto Wallet",
+        "photo": "img/make19.jpg",
         "url": "",
-        "info": ""
+        "info": "Wubba Lubba Dub Dub"
       },
       {
         "id": 2,
         "title": "IDEO CoLab 2018 Makeathon",
-        "project": "",
-        "photo": "",
+        "project": "Bloom - The Data Driven Flower",
+        "photo": "img/make18.jpg",
         "url": "",
-        "info": ""
+        "info": "Wubba Lubba Dub Dub"
       }
     ]
   }

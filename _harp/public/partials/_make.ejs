@@ -1,11 +1,26 @@
-<section id="make">
-  <div class="make">
-    <!-- link and info about makeathon team and project -->
-    <div class="make-img">
-
-    </div>
-    <div class="make-content">
-
-    </div>
+<section id="makes">
+  <div class="section-title">
+    <h1>Makeathons</h1>
+  </div>
+  <div class="makes">
+  <!-- info about makeathon team and project -->
+    <% makes.forEach(make => { %>
+      <div class="make">
+        <div class="make-img">
+          <img src="<%= make.photo %>" alt="<%= make.project %>">
+        </div>
+        <div class="make-info">
+          <div class="make-title">
+            <h2><%= make.title %></h2>
+          </div>
+          <div class="make-project">
+            <h3><%= make.project %></h3>
+          </div>
+          <div class="make-info">
+            <p><%= make.info %></p>
+          </div>
+        </div>
+      </div>
+    <% }); %>
   </div>
 </section>

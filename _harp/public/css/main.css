@@ -305,8 +305,8 @@ section#about .about {
 .about-img-holder img {
   width: 250px;
   height: auto;
-  -webkit-transform: scale(1.15) translate(10px);
-          transform: scale(1.15) translate(10px);
+  -webkit-transform: scale(1.05) translate(5px);
+          transform: scale(1.05) translate(5px);
 }
 .about-title {
   border-radius: 10px;

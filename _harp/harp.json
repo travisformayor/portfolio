@@ -1,7 +1,7 @@
 {
   "globals": {
     "profile": {
-      "img": "img/me.jpg",
+      "img": "img/hike-profile.jpg",
       "name": "Travis Uhrig",
       "title": "Software Developer",
       "tagline": "",
@@ -59,6 +59,24 @@
         "name": "San Francisco Bitcoin Meetup",
         "role": "Organizer",
         "img": "img/sfbtcmeet.jpeg",
+        "url": "",
+        "info": ""
+      }
+    ],
+    "make": [
+      {
+        "id": 1, 
+        "title": "IDEO CoLab 2019 Makeathon",
+        "project": "",
+        "photo": "",
+        "url": "",
+        "info": ""
+      },
+      {
+        "id": 2,
+        "title": "IDEO CoLab 2018 Makeathon",
+        "project": "",
+        "photo": "",
         "url": "",
         "info": ""
       }

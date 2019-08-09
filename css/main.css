@@ -79,7 +79,8 @@ section {
   border-radius: 10px;
   /* display: inline-block; */
   background-color: var(--title-color);
-  box-shadow: var(--box-shadow);
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
 }
 .section-title h1 {
   margin: 0px;
@@ -104,7 +105,7 @@ header {
           align-items: center;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -167,8 +168,8 @@ nav li a {
   text-decoration: none;
   -webkit-transition-property: font-size, border-bottom;
   transition-property: font-size, border-bottom;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
   border-bottom: 0px solid white;
   border-radius: 5px;
 }
@@ -234,7 +235,7 @@ button#close .cross2 {
 }
 .sidemenu {
   background: white;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0px;
   right: -300px;
@@ -326,9 +327,15 @@ section#about .about {
 }
 /* Projects Section ============== */
 section#projects .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 section#projects .project {
   border-radius: 10px;
@@ -360,14 +367,14 @@ section#projects .project {
   top: 0;
   left: 0;
   text-decoration: none;
-  z-index: 10;
+  z-index: 1;
   /* IE workaround */
   background-color: white;
   opacity: 0;
   filter: alpha(opacity=0);
 }
 .project-dummy {
-  margin: 10px;
+  margin: 0px 10px;
   width: 370px;
   height: 0px;
 }
@@ -377,7 +384,7 @@ section#projects .project:hover {
           box-shadow: var(--box-shadow-out);
 }
 .project-img {
-  margin: 10px;
+  margin: 15px 9px;
   border-radius: 10px;
   overflow: hidden;
   max-height: 355px;
@@ -421,27 +428,81 @@ section#projects .project:hover {
   margin: 0 10px 10px;
   padding: 0 10px 10px;
 }
-/* Meetup Section ================ */
-/* section#meetup .meetup {
-  background: lightyellow;
-  width: 100%;
+/* Makeathons Section ============== */
+section#makes .makes {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
 }
-.meetup-img {
-  background: silver;
-  width: 30%;
-  height: 40px;
-  margin: 10px;
+section#makes .make {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+  margin: 10px 10px 30px;
+  max-width: 450px;
+  -webkit-box-shadow: var(--box-shadow);
+          box-shadow: var(--box-shadow);
+  background-color: var(--primary);
+  /* position: relative; */
+  /* top: 0; */
 }
-.meetup-content {
-  background: pink;
-  height: 40px;
-  margin: 10px;
+.make-img {
+  margin: 15px 9px;
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 100%;
+}
+.make-img img {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.make-title {
+  display: inline-block;
+  text-align: center;
+  border-radius: 10px;
+  background: var(--title-color);
+  -webkit-box-shadow: var(--box-shadow);
+  box-shadow: var(--box-shadow);
+  margin: 15px;
   padding: 10px;
-} */
+}
+.make-title h2 {
+  color: var(--title-font-color);
+  margin-bottom: 0;
+}
+.make-info {
+  text-align: center;
+  margin: 0 10px 10px;
+  padding: 0 10px 10px;
+}
+.make-info p {
+  line-height: 1.4;
+}
+/* Meetup Section ================ */
+
 /* Footer Section ================ */
 footer {
   background: var(--footer-color);
@@ -472,6 +533,19 @@ footer .social img {
 }
 
 /* Media Queries ================= */
+
+@media screen and (max-width: 800px) {
+  section#makes .makes {
+    /* Switch makes to columns */
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (max-width: 720px) {
   /* toggle hamburger at nav breakpoint */
   #fullnav { display: none; }
@@ -496,8 +570,11 @@ footer .social img {
 @media screen and (max-width: 400px) {
   /* fill site to full width */
   main { width: 100%; }
-  /* fix project images and social icons overflowing */
+  /* fix project images, social icons overflowing, and remove margin */
+  section#projects .project { margin: 10px 0px 30px ; }
+  section#makes .make { margin: 10px 0px 30px; }
   .project-img img { width: 95vw; }
+  .make-img img { width: 95vw; }
   /* give social links more room */
   nav#mobilenav { width: 20%; }
   header .social { width: 50%; }

@@ -54,7 +54,7 @@ const scrollActive = () => {
   $('nav#fullnav ul a').each(function () {
     const currLink = $(this);
     const refElement = $(currLink.attr("href"));
-    const refTopPos = refElement.position().top - 1;
+    const refTopPos = refElement.position().top - 5;
     if (refTopPos <= scrollPos && refTopPos + refElement.height() > scrollPos) {
       setActive(currLink);
     };

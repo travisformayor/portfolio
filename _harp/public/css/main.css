@@ -167,8 +167,8 @@ nav li a {
   text-decoration: none;
   -webkit-transition-property: font-size, border-bottom;
   transition-property: font-size, border-bottom;
-  -webkit-transition-duration: 500ms;
-          transition-duration: 500ms;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
   border-bottom: 0px solid white;
   border-radius: 5px;
 }

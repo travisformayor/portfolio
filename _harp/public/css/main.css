@@ -104,7 +104,7 @@ header {
           align-items: center;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
-  z-index: 1;
+  z-index: 2;
   position: fixed;
   top: 0;
   left: 0;
@@ -234,7 +234,7 @@ button#close .cross2 {
 }
 .sidemenu {
   background: white;
-  z-index: 2;
+  z-index: 3;
   position: fixed;
   top: 0px;
   right: -300px;
@@ -360,7 +360,7 @@ section#projects .project {
   top: 0;
   left: 0;
   text-decoration: none;
-  z-index: 10;
+  z-index: 1;
   /* IE workaround */
   background-color: white;
   opacity: 0;

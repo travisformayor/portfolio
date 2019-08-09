@@ -377,7 +377,7 @@ section#projects .project:hover {
           box-shadow: var(--box-shadow-out);
 }
 .project-img {
-  margin: 10px;
+  margin: 15px 9px;
   border-radius: 10px;
   overflow: hidden;
   max-height: 355px;
@@ -424,14 +424,14 @@ section#projects .project:hover {
 /* Makeathons Section ============== */
 section#makes .makes {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
 section#makes .make {
   border-radius: 10px;
   margin: 10px 10px 30px;
-  max-width: 900px;
+  max-width: 450px;
   -webkit-box-shadow: var(--box-shadow);
           box-shadow: var(--box-shadow);
   background-color: var(--primary);
@@ -450,8 +450,7 @@ section#makes .make {
   /* top: 0; */
 }
 .make-img {
-  margin: 15px;
-  /* padding: 10px; */
+  margin: 15px 9px;
   border-radius: 10px;
   overflow: hidden;
   max-width: 100%;
@@ -462,17 +461,18 @@ section#makes .make {
   transform: scale(1.05);
 }
 .make-title {
+  display: inline-block;
   text-align: center;
   border-radius: 10px;
   background: var(--title-color);
   -webkit-box-shadow: var(--box-shadow);
   box-shadow: var(--box-shadow);
-  height: 45px;
   margin: 15px;
   padding: 10px;
 }
 .make-title h2 {
   color: var(--title-font-color);
+  margin-bottom: 0;
 }
 .make-info {
   text-align: center;
@@ -480,26 +480,7 @@ section#makes .make {
   padding: 0 10px 10px;
 }
 /* Meetup Section ================ */
-/* section#meetup .meetup {
-  background: lightyellow;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-}
-.meetup-img {
-  background: silver;
-  width: 30%;
-  height: 40px;
-  margin: 10px;
-}
-.meetup-content {
-  background: pink;
-  height: 40px;
-  margin: 10px;
-  padding: 10px;
-} */
+
 /* Footer Section ================ */
 footer {
   background: var(--footer-color);
@@ -530,6 +511,13 @@ footer .social img {
 }
 
 /* Media Queries ================= */
+
+@media screen and (max-width: 800px) {
+  section#makes .makes {
+    /* Switch makes to columns */
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 720px) {
   /* toggle hamburger at nav breakpoint */
   #fullnav { display: none; }
@@ -554,8 +542,11 @@ footer .social img {
 @media screen and (max-width: 400px) {
   /* fill site to full width */
   main { width: 100%; }
-  /* fix project images and social icons overflowing */
+  /* fix project images, social icons overflowing, and remove margin */
+  section#projects .project { margin: 10px 0px 30px ; }
+  section#makes .make { margin: 10px 0px 30px; }
   .project-img img { width: 95vw; }
+  .make-img img { width: 95vw; }
   /* give social links more room */
   nav#mobilenav { width: 20%; }
   header .social { width: 50%; }

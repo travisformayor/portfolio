@@ -69,16 +69,14 @@
         "title": "IDEO CoLab 2019 Makeathon",
         "project": "Bloom - The Data Driven Flower",
         "photo": "img/make19.jpg",
-        "url": "",
-        "info": "Our team explored how Big Data can help employees. Bloom is a system that takes in data from places like fitbit and social media, matches that against user goals, and creates a satisfaction score. An artificial flower display that score by gradually shifting between full bloom or wilting. This single easy visual output, matched with zero direct user input outside of setup, was picked with the goal of reducing complexity for the user by leveraging big data's strength at collating lots of already available information."
+        "info": "Our team explored how Big Data can help improve employee satisfaction. Bloom analyzes collected data from apps like fitbit and social media, and compares it against user defined goals to create a general satisfaction score. An artificial flower then physically displays that score by gradually shifting between full bloom or wilting. This single visual output, matched with zero direct user input outside of setup, was designed with the goal of reducing complexity for the user by instead leveraging Big Data's strengths in collating large sets of already available data."
       },
       {
         "id": 2,
         "title": "IDEO CoLab 2018 Makeathon",
         "project": "My First Crypto Wallet",
         "photo": "img/make18.jpg",
-        "url": "",
-        "info": "Our team designed a product that was targeted at a first time crypto wallet holder. We based it on similar products created by credit card companies for first time cardholders, targeted at youths and offering more parental controls. A big concepts in cryptocurrency is independence, so our version imagined this as a mentor and advisor relationship, with rewards for fulfilling responsibilities."
+        "info": "Our team designed a product targeted at first time crypto wallet holders. We based it on similar products created by credit card companies for first time cardholders which are targeted at youths and offer more parental controls. A big concept in cryptocurrency is independence, so our version imagined this user experience as a mentor and mentee relationship, with rewards coming from completing mentor directed goals."
       }
     ]
   }

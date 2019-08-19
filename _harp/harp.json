@@ -30,21 +30,21 @@
         "title": "Marker",
         "tagline": "Image Gallery powered by AWS S3",
         "screen": "img/marker.png",
-        "github": "https://github.com/travisformayor/marker-ga"
+        "github": "https://github.com/travisformayor/marker-ga#readme"
       },
       {
         "id": 1,
         "title": "Sunny Where?",
         "tagline": "Find the Closest Sunny City",
         "screen": "img/sunnywhere.png",
-        "github": "https://github.com/travisformayor/sunnywhere"
+        "github": "https://github.com/travisformayor/sunnywhere#readme"
       },
       {
         "id": 2,
         "title": "PlayDate",
         "tagline": "Tinder for Pets",
         "screen": "img/playdate.png",
-        "github": "https://github.com/allen-wright/sei1-project1"
+        "github": "https://github.com/allen-wright/sei1-project1#readme"
       },
       {
         "id": 3,

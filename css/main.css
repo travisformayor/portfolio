@@ -506,8 +506,7 @@ section#makes .make {
 /* Footer Section ================ */
 footer {
   background: var(--footer-color);
-  background: -webkit-gradient(linear, left top, left bottom, from(var(--bg-color)), color-stop(5%), to(var(--footer-color)));
-  background: linear-gradient(var(--bg-color), 5%, var(--footer-color));
+  box-shadow: var(--box-shadow);
   color: white;
   width: 100%;
   margin-top: 70px;

@@ -27,38 +27,38 @@
     "projects": [
       {
         "id": 1,
+        "title": "Backtick Search",
+        "tagline": "Tildeverse Search Engine ReactJS Frontend",
+        "screen": "img/backtick.png",
+        "github": "https://github.com/travisformayor/backtick-react#readme"
+      },
+      {
+        "id": 2,
         "title": "Decred Ticket Tool",
         "tagline": "Decred ticket staking information",
         "screen": "img/tickettoolscreen.png",
         "github": "https://github.com/travisformayor/decred-ticket-tool#readme"
       },
       {
-        "id": 2,
+        "id": 3,
+        "title": "Curio Cards",
+        "tagline": "Rare Collectable Art on Ethereum",
+        "screen": "img/curio.png",
+        "github": "https://github.com/curiocards/curio.cards#readme"
+      },
+      {
+        "id": 4,
         "title": "Marker",
         "tagline": "Image Gallery powered by AWS S3",
         "screen": "img/marker.png",
         "github": "https://github.com/travisformayor/marker-ga#readme"
       },
       {
-        "id": 3,
+        "id": 5,
         "title": "Sunny Where?",
         "tagline": "Find the Closest Sunny City",
         "screen": "img/sunnywhere.png",
         "github": "https://github.com/travisformayor/sunnywhere#readme"
-      },
-      {
-        "id": 4,
-        "title": "PlayDate",
-        "tagline": "Tinder for Pets",
-        "screen": "img/playdate.png",
-        "github": "https://github.com/allen-wright/sei1-project1#readme"
-      },
-      {
-        "id": 5,
-        "title": "Curio Cards",
-        "tagline": "Rare Collectable Art on Ethereum",
-        "screen": "img/curio.png",
-        "github": "https://github.com/curiocards/curio.cards#readme"
       }
     ],
     "meetups": [

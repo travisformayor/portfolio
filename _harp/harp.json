@@ -28,28 +28,28 @@
       {
         "id": 1,
         "title": "Backtick Search",
-        "tagline": "Tildeverse Search Engine ReactJS Frontend",
+        "tagline": "Tildeverse Search Frontend",
         "screen": "img/backtick.png",
         "github": "https://github.com/travisformayor/backtick-react#readme"
       },
       {
         "id": 2,
         "title": "Decred Ticket Tool",
-        "tagline": "Decred ticket staking information",
+        "tagline": "Decred ticket staking stats",
         "screen": "img/tickettoolscreen.png",
         "github": "https://github.com/travisformayor/decred-ticket-tool#readme"
       },
       {
         "id": 3,
         "title": "Curio Cards",
-        "tagline": "Rare Collectable Art on Ethereum",
+        "tagline": "Rare Art on Ethereum",
         "screen": "img/curio.png",
         "github": "https://github.com/curiocards/curio.cards#readme"
       },
       {
         "id": 4,
         "title": "Marker",
-        "tagline": "Image Gallery powered by AWS S3",
+        "tagline": "Image Gallery using AWS S3",
         "screen": "img/marker.png",
         "github": "https://github.com/travisformayor/marker-ga#readme"
       },

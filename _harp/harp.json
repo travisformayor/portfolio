@@ -5,7 +5,7 @@
       "name": "Travis Uhrig",
       "title": "Software Developer",
       "tagline": "",
-      "about": "Hi! I am a software developer with a sysAdmin background. I like Hiking, Trello, and building things (physical as well as digital). I volunteer time for open source, linux, and bitcoin/cryptocurrency groups. I have moderated bitcoin themed panels, spoken at conferences on the potential for art in crypto, and organize one of the oldest and largest bitcoin meetup groups in the world.",
+      "about": "Hi! I am a software developer with a sysAdmin background. I like cats, cooking, Trello, and building things both physical and digital. I volunteer time for open source, linux, and bitcoin/cryptocurrency groups. I have moderated bitcoin themed panels, spoken at conferences on the potential for art in crypto, and previously organized one of the oldest and largest bitcoin meetup groups in the world.",
       "social": [
         {
           "site": "Twitter",
@@ -27,38 +27,38 @@
     "projects": [
       {
         "id": 1,
+        "title": "Backtick Search",
+        "tagline": "Tildeverse Search Frontend",
+        "screen": "img/backtick.png",
+        "github": "https://github.com/travisformayor/backtick-react#readme"
+      },
+      {
+        "id": 2,
         "title": "Decred Ticket Tool",
-        "tagline": "Decred ticket staking information",
+        "tagline": "Decred ticket staking stats",
         "screen": "img/tickettoolscreen.png",
         "github": "https://github.com/travisformayor/decred-ticket-tool#readme"
       },
       {
-        "id": 2,
+        "id": 3,
+        "title": "Curio Cards",
+        "tagline": "Rare Art on Ethereum",
+        "screen": "img/curio.png",
+        "github": "https://github.com/curiocards/curio.cards#readme"
+      },
+      {
+        "id": 4,
         "title": "Marker",
-        "tagline": "Image Gallery powered by AWS S3",
+        "tagline": "Image Gallery using AWS S3",
         "screen": "img/marker.png",
         "github": "https://github.com/travisformayor/marker-ga#readme"
       },
       {
-        "id": 3,
+        "id": 5,
         "title": "Sunny Where?",
         "tagline": "Find the Closest Sunny City",
         "screen": "img/sunnywhere.png",
         "github": "https://github.com/travisformayor/sunnywhere#readme"
-      },
-      {
-        "id": 4,
-        "title": "PlayDate",
-        "tagline": "Tinder for Pets",
-        "screen": "img/playdate.png",
-        "github": "https://github.com/allen-wright/sei1-project1#readme"
-      },
-      {
-        "id": 5,
-        "title": "Curio Cards",
-        "tagline": "Rare Collectable Art on Ethereum",
-        "screen": "img/curio.png",
-        "github": "https://github.com/curiocards/curio.cards#readme"
       }
     ],
     "meetups": [
